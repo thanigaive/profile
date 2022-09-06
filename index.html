@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:sans-serif;
+            box-sizing:border-box;
+        }
+        .container{
+            width:100%;
+            min-height:100vh;
+            background: #212121;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          
+        }
+        .profile-card
+        {
+            width:90%;
+            max-width:450px;
+            text-align:center;
+            background:#fff ;
+            color:#333;
+        }
+        .cover-pic{
+            display:block;
+            width: 100%;
+        }
+        .profile-pic{
+            width:140px;
+            border-radius: 50%;
+            margin-top:-70px;
+            transition: .2 ease-in-out;
+        }
+        .profile-pic:hover{
+            box-shadow: 0 0 0 5px #ff004f;
+        }
+        .profile-card h1{
+            font-weight: 600;
+        }
+        .follow-btn{
+            display:inline-block;
+            text-decoration: none;
+            border: 1px solid #ff004f;
+            color: #555;
+            padding: 6px 35px;
+            margin: 25px 0;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+        }
+        .row h2{
+            font-weight: 500;
+            font-size: 30px;
+        }
+        .view-btn{
+            display: inline-block;
+            text-decoration: none;
+            background: #ff004f;
+            width:100%;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>`
+    <div class="container">
+        <div class="profile-card">
+            <img src="cover.png" alt="error" class="cover-pic">
+            <img src="profile.png" alt="error" class="profile-pic">
+            <h1>Brie Larson</h1>
+            <p>Social Media Influencer,Tik Tok</p>
+            <a href="#" class="follow-btn">Follow</a>
+            <div class="row">
+                <div>
+                    <p>Followers</p>
+                    <h2>1.25M</h2>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <h2>10</h2>
+                </div>
+                <div>
+                    <p>Videos</p>
+                    <h2>311</h2>
+                </div>
+            </div>
+            <a href="#" class="view-btn">VIEW PROFILE</a>
+        </div>
+    </div>
+   
+</body>
+</html>
